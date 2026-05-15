@@ -23,10 +23,10 @@ Here's the page look like:
 ## LIVE DEMO
 
 Here's take a quick preview yourself:
-- [Click here for live demo]()
+- [Click here for live demo](https://amnaakhtar1213.github.io/e-commerce-store-chair-/)
 
 -------------------------------
 
 ## Clone the Repository
 ```bash
-git clone 
+git clone https://github.com/Amnaakhtar1213/e-commerce-store-chair-.git
