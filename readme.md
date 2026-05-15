@@ -16,7 +16,7 @@ How to run 👉🏻
 ## SCREENSHOTS 🖼️
 
 Here's the page look like:
-- [Click here for screenshot](ss.png)
+- [Click here for screenshot](./imgs/ss.png)
 
 ---------------------------
 
