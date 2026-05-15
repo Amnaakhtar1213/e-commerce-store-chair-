@@ -1,0 +1,32 @@
+## One Product E-COMMERCE STORE (CHAIRS) 💺
+
+My first ever e-commerce store that i build today.I really wanted to do it a long time age but i am not prepared enough on that time ,but i today i made it .Its just a simple one product e-commerce store frontend page., that has a navbar, a buttons .It only built with **html** and **css**.But in future i really tried to make a better and responsive store.
+
+------------------------------------
+
+## Tech stack 🛠️
+
+- **HTML**
+- **CSS**
+
+---------------------------
+
+How to run 👉🏻
+
+## SCREENSHOTS 🖼️
+
+Here's the page look like:
+- [Click here for screenshot](ss.png)
+
+---------------------------
+
+## LIVE DEMO
+
+Here's take a quick preview yourself:
+- [Click here for live demo]()
+
+-------------------------------
+
+## Clone the Repository
+```bash
+git clone 
