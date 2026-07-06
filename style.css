@@ -292,18 +292,24 @@ font-style: italic;
   margin-bottom: 20px;
 }
 @media (max-width:1150px){
-  .img-container{
-    width: 340px;
-    height: 340px;
+ .img-container img {
+    width: 300px;
+    height: 380px;
   }
   .d-none{
     display: none;
+  }
+    .main-heading {
+    font-size: 3rem;
   }
    nav{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+  }
+    .products-heading {
+    font-size: 3rem;
   }
    .logo-container h1{
   margin-bottom: 20px;
@@ -312,37 +318,74 @@ font-style: italic;
 }
 
 @media (max-width:900px){
-  header{
-    height: 120vh;
+   header {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
+  }
+   .content-container {
+    margin: 0 auto;       /* center content */
+    text-align: center;   /* center text */
+  }
+   .img-container img {
+    margin: 20 auto;    
+    display: block;   /* center image */
+    /* space below image */
+  }
+  .main-heading {
+    margin: 0 auto 2rem auto;
+    text-align: center;
+  }
+  .primary-heading {
+    margin: 0 auto;
+    text-align: center;
+  }
+   .products-heading {
+    font-size: 3rem;
+  }
+ .products {
+    flex-direction: column;
+    align-items: center;
+  }
+  .why-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+   .popularity {
+    flex-direction: column;
+    margin-top: 4rem;
     text-align: center;
     justify-content: center;
+    align-items: center;
   }
-header .content-container{
-  margin-bottom: 6rem;
-  margin-top: 4rem;
-  margin-left: 0;
-}
-.popularity{
-  margin-top: 22rem;
-  text-align: center;
-}
-nav a{
-    display: none;
+ nav ul li a {
+    display: none; /* hide nav links, keep logo */
   }
    .logo-container h1{
   margin-bottom: 50px;
  }
+   footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    height: auto;
+  }
  
 
 }
 
 @media (max-width:600px){
-  .primary-heading{
-    width: 350px;
+  .primary-heading {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
   }
-  .img-container{
-    width: 350px;
-    height: 350px;
+   .img-container img {
+    width: 280px;
+    height: 280px;
   }
   .popularity div h1{
     font-size: 2rem;
@@ -357,34 +400,95 @@ nav a{
   font-size: 2.2rem;
   text-align: center;
  }
- .cards{
-  margin-right: 5rem;
- }
+  .cards {
+    grid-template-columns: 1fr; /* stack cards */
+    justify-items: center;
+  }
+    footer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
+  }
  .logo-container h1{
   margin-bottom: 50px;
  }
 }
-@media (max-width:600px){
-  nav a{
-    display: none;
-  }
-  nav .logo{
-    margin-right: 60px;
-  }
-  body{
+
+ @media (max-width:480px){
+  nav {
+    justify-content: center;
+    flex-direction: column;   /* stack logo + nav items */
     text-align: center;
   }
-  .img-container img{
-    margin-left: 0px; 
-  }
-  .content-container .main-heading{
-    margin-right: 90px;
-  }
-  .content-container .primary-heading{
-   text-align: center;
-  }
-  .logo-container h1{
-margin-bottom: 20px;
+
+  nav h1 {
+    font-size: 1.5rem;
+    margin: 0 auto;           /* center logo text */
   }
 
+  ul li a {
+    margin: 0 10px;           /* smaller spacing between links */
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .content-container {
+    margin: 0 auto;           /* remove left margin */
+    text-align: center;
+  }
+
+  .main-heading {
+    font-size: 1.8rem;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+  }
+
+  .primary-heading {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .img-container img {
+    width: 220px;
+    height: 220px;
+    margin: 20px auto;        /* center image */
+    display: block;
+  }
+
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product .product-img-layer .img {
+    width: 180px;
+    height: 150px;
+  }
+
+  .why-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .why-us .img-layer .img {
+    width: 200px;
+    height: 200px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
 }
